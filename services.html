@@ -15,288 +15,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-submenu/dist/js/bootstrap-submenu.min.js"></script>
 </head>
 <body>
-    <div class="modal fade" id="wireModal" tabindex="-1" role="dialog" aria-labelledby="wireModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="wireModalLabel">Wire Binding</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>You have chosen Wire as a binding method.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Add modal for "Saddle Stitch" -->
-    <div class="modal fade" id="saddleStitchModal" tabindex="-1" role="dialog" aria-labelledby="saddleStitchModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="saddleStitchModalLabel">Saddle Stitch Binding</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>You have chosen Saddle Stitch as a binding method.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Add modal for "Heated Spine" -->
-    <div class="modal fade" id="heatedSpineModal" tabindex="-1" role="dialog" aria-labelledby="heatedSpineModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="heatedSpineModalLabel">Heated Spine Binding</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>You have chosen Heated Spine as a binding method.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Add modal for "A3 Laminating" -->
-    <div class="modal fade" id="a3LaminatingModal" tabindex="-1" role="dialog" aria-labelledby="a3LaminatingModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="a3LaminatingModalLabel">A3 Laminating</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>You have chosen A3 for the size of Lamination.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Add modal for "A4 Laminating" -->
-    <div class="modal fade" id="a4LaminatingModal" tabindex="-1" role="dialog" aria-labelledby="a4LaminatingModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="a4LaminatingModalLabel">A4 Laminating</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>You have chosen A4 for the size of Lamination</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Add modal for "Guillotine Cutting" -->
-    <div class="modal fade" id="guillotineCuttingModal" tabindex="-1" role="dialog" aria-labelledby="guillotineCuttingModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="guillotineCuttingModalLabel">Guillotine Cutting</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>You have chosen The Guillotine Machine as a cutting method.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Add modal for "Automatic Cutting" -->
-    <div class="modal fade" id="automaticCuttingModal" tabindex="-1" role="dialog" aria-labelledby="automaticCuttingModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="automaticCuttingModalLabel">Automatic Cutting</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>You have chosen The Automatic Slitting Machine as a cutting method.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Add modal for "Hewlett Packard Ink" -->
-<div class="modal fade" id="hpInkModal" tabindex="-1" role="dialog" aria-labelledby="hpInkModalLabel"
-aria-hidden="true">
-<div class="modal-dialog" role="document">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="hpInkModalLabel">Hewlett Packard Ink</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-        <div class="modal-body">
-            <p>Known for producing sharp text and vibrant colors, HP printers generally offer good print quality across their range of models.</p>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-    </div>
-</div>
-</div>
-
-<!-- Add modal for "Canon Ink" -->
-<div class="modal fade" id="canonInkModal" tabindex="-1" role="dialog" aria-labelledby="canonInkModalLabel"
-aria-hidden="true">
-<div class="modal-dialog" role="document">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="canonInkModalLabel">Canon Ink</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-        <div class="modal-body">
-            <p>Canon printers are often praised for their excellent photo printing quality, with vibrant colors, smooth gradients, and high resolution.</p>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-    </div>
-</div>
-</div>
-
-<!-- Add modal for "Epson Ink" -->
-<div class="modal fade" id="epsonInkModal" tabindex="-1" role="dialog" aria-labelledby="epsonInkModalLabel"
-aria-hidden="true">
-<div class="modal-dialog" role="document">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="epsonInkModalLabel">Epson Ink</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-        <div class="modal-body">
-            <p>Epson printers are known for their exceptional photo printing quality, particularly with their dedicated photo printers. They often produce prints with accurate colors and impressive detail.</p>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-    </div>
-</div>
-</div>
-
-<!-- Add modal for "Matte Paper Stock" -->
-<div class="modal fade" id="mattePaperModal" tabindex="-1" role="dialog" aria-labelledby="mattePaperModalLabel"
-aria-hidden="true">
-<div class="modal-dialog" role="document">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="mattePaperModalLabel">Matte Paper Stock</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-        <div class="modal-body">
-            <p>Description: Matte paper has a non-reflective, flat surface that diffuses light, resulting in a softer appearance compared to glossy paper. It typically has a smooth texture but lacks the shine of glossy paper.
-                <br>Advantages: Matte paper reduces glare and fingerprints, making it ideal for prints that will be handled frequently or viewed under direct lighting. It also provides a more subtle, understated look compared to glossy paper.
-                <br>Common Uses: Art prints, posters, fine art reproductions, text-heavy documents, and any application where reduced glare and a more subdued finish are desired.</p>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-    </div>
-</div>
-</div>
-
-<!-- Add modal for "Glossy Paper Stock" -->
-<div class="modal fade" id="glossyPaperModal" tabindex="-1" role="dialog" aria-labelledby="glossyPaperModalLabel"
-aria-hidden="true">
-<div class="modal-dialog" role="document">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="glossyPaperModalLabel">Glossy Paper Stock</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-        <div class="modal-body">
-            <p>Description: Glossy paper has a shiny, reflective surface that enhances the vibrancy and depth of colors in printed images. It typically has a smooth texture.
-                <br>Advantages: Glossy paper produces sharp, vibrant prints with excellent color saturation and contrast. It's ideal for printing photos and images that you want to showcase with a glossy finish.
-                <br>Common Uses: Photography prints, promotional materials, brochures, flyers, and presentations where color accuracy and visual impact are important.</p>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-    </div>
-</div>
-</div>
-
-<!-- Add modal for "Textured Paper Stock" -->
-<div class="modal fade" id="texturedPaperModal" tabindex="-1" role="dialog" aria-labelledby="texturedPaperModalLabel"
-aria-hidden="true">
-<div class="modal-dialog" role="document">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="texturedPaperModalLabel">Textured Paper Stock</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-        <div class="modal-body">
-            <p>Description: Textured paper has a surface with a distinct texture, such as a canvas-like weave, linen-like pattern, or watercolor-like texture. The texture adds depth and character to prints, creating a unique tactile experience.
-                <br>Advantages: Textured paper adds visual interest and a tactile element to prints, enhancing their artistic appeal. It can also help mimic the look and feel of traditional art mediums.
-                <br>Common Uses: Fine art prints, invitations, greeting cards, stationery, and any project where you want to add a touch of sophistication or artistic flair.</p>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-    </div>
-</div>
-</div>
-
-
     <header class="py-4">
         <div class="banner-image">
             <a href="index.html">
-                <img src="logo.png" class="logo" alt="Logo"> <!-- Add your logo image -->
+                <img src="logo.png" class="logo" alt="Logo"> 
             </a>
             <div class="banner-text">
                 <h1>Vitaly Tea</h1>
@@ -325,57 +47,7 @@ aria-hidden="true">
                 <li class="nav-item"><a class="nav-link text-white" href="aboutus.html">ABOUT US</a></li>
             </ul>
         </div>
-    </nav>
-    <section id="testimonials" class="py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 mx-auto">
-                    <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="testimonial">
-                                    <p class="quote">"Great service! I love being able to print my documents while
-                                        enjoying a cup of coffee."</p>
-                                    <p class="author">- John Doe</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="testimonial">
-                                    <p class="quote">"Convenient and efficient. Vitaly Tea is my go-to place for
-                                        printing and coffee!"</p>
-                                    <p class="author">- Jane Smith</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="testimonial">
-                                    <p class="quote">"The staff is friendly, and the printing quality is excellent.
-                                        Highly recommended!"</p>
-                                    <p class="author">- Michael Johnson</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="testimonial">
-                                    <p class="quote">"Love the atmosphere! It's a great place to work while enjoying a
-                                        good cup of coffee."</p>
-                                    <p class="author">- Sarah Williams</p>
-                                </div>
-                            </div>
-                            <!-- Add more testimonials as needed -->
-                        </div>
-                        <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
+    </nav>  
     <section id="services" class="py-4">
         <div class="row">
             <div class="col-md-4">
@@ -384,8 +56,8 @@ aria-hidden="true">
                         <h5 class="card-title">Binding</h5>
                         <p class="card-text">Choose a binding method:</p>
                         <button type="button" class="btn btn-primary btn-block mb-2" data-toggle="modal" data-target="#wireModal">Wire</button>
-                        <button type="button" class="btn btn-primary btn-block mb-2" data-toggle="modal" data-target="#saddleStitchModal">Saddle Stitch</button>
-                        <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#heatedSpineModal">Heated Spine</button>
+                        <button type="button" class="btn btn-primary btn-block mb-2" data-toggle="modal" data-target="#saddleModal">Saddle Stitch</button>
+                        <button type="button" class="btn btn-primary btn-block mb-2" data-toggle="modal" data-target="#heatedSpineModal">Heated Spine</button>
                     </div>
                 </div>
             </div>
@@ -434,6 +106,322 @@ aria-hidden="true">
         </div>
     </section>    
 
+<div class="modal fade" id="hpInkModal" tabindex="-1" role="dialog" aria-labelledby="hpInkModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="hpInkModalLabel">Hewlett Packard Ink</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>You have chosen Hewlett Packard Ink.</p>
+                <label for="hpQuantity">Enter quantity:</label>
+                <input type="number" id="hpQuantity" name="hpQuantity" class="form-control mb-3" min="1">
+                <p id="hpCost">Cost: $0</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="calculateHPCost()">Calculate Cost</button>
+                <button type="button" class="btn btn-success" onclick="proceedWithOrder('Hewlett Packard Ink')">Proceed with Order</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="canonInkModal" tabindex="-1" role="dialog" aria-labelledby="canonInkModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="canonInkModalLabel">Canon Ink</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>You have chosen Canon Ink.</p>
+                <label for="canonQuantity">Enter quantity:</label>
+                <input type="number" id="canonQuantity" name="canonQuantity" class="form-control mb-3" min="1">
+                <p id="canonCost">Cost: $0</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="calculateCanonCost()">Calculate Cost</button>
+                <button type="button" class="btn btn-success" onclick="proceedWithOrder('Canon Ink')">Proceed with Order</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="epsonInkModal" tabindex="-1" role="dialog" aria-labelledby="epsonInkModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="epsonInkModalLabel">Epson Ink</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>You have chosen Epson Ink.</p>
+                <label for="epsonQuantity">Enter quantity:</label>
+                <input type="number" id="epsonQuantity" name="epsonQuantity" class="form-control mb-3" min="1">
+                <p id="epsonCost">Cost: $0</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="calculateEpsonCost()">Calculate Cost</button>
+                <button type="button" class="btn btn-success" onclick="proceedWithOrder('Epson Ink')">Proceed with Order</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="mattePaperModal" tabindex="-1" role="dialog" aria-labelledby="mattePaperModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="mattePaperModalLabel">Matte Paper</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>You have chosen Matte paper.</p>
+                <label for="matteQuantity">Enter quantity:</label>
+                <input type="number" id="matteQuantity" name="matteQuantity" class="form-control mb-3" min="1">
+                <p id="matteCost">Cost: $0</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="calculateMatteCost()">Calculate Cost</button>
+                <button type="button" class="btn btn-success" onclick="proceedWithOrder('Matte Paper')">Proceed with Order</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="glossyPaperModal" tabindex="-1" role="dialog" aria-labelledby="glossyPaperModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="glossyPaperModalLabel">Glossy Paper</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>You have chosen Glossy paper.</p>
+                <label for="glossyQuantity">Enter quantity:</label>
+                <input type="number" id="glossyQuantity" name="glossyQuantity" class="form-control mb-3" min="1">
+                <p id="glossyCost">Cost: $0</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="calculateGlossyCost()">Calculate Cost</button>
+                <button type="button" class="btn btn-success" onclick="proceedWithOrder('Glossy Paper')">Proceed with Order</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="texturedPaperModal" tabindex="-1" role="dialog" aria-labelledby="texturedPaperModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="texturedPaperModalLabel">Textured Paper</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>You have chosen Textured paper.</p>
+                <label for="texturedQuantity">Enter quantity:</label>
+                <input type="number" id="texturedQuantity" name="texturedQuantity" class="form-control mb-3" min="1">
+                <p id="texturedCost">Cost: $0</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="calculateTexturedCost()">Calculate Cost</button>
+                <button type="button" class="btn btn-success" onclick="proceedWithOrder('Textured Paper')">Proceed with Order</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="modal fade" id="wireModal" tabindex="-1" role="dialog" aria-labelledby="wireModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="wireModalLabel">Wire Binding</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>You have chosen Wire as a binding method.</p>
+                    <label for="wirePages">Enter the number of pages:</label>
+                    <input type="number" id="wirePages" name="wirePages" class="form-control mb-3">
+                    <p id="wireCost">Cost: $0</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" onclick="calculateWireCost()">Calculate Cost</button>
+                    <button type="button" class="btn btn-success" onclick="proceedWithOrder()">Proceed with Order</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="saddleModal" tabindex="-1" role="dialog" aria-labelledby="saddleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="saddleModalLabel">Saddle Stitch Binding</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>You have chosen Saddle Stitch Binding method.</p>
+                    <label for="saddlePages">Enter the number of pages:</label>
+                    <input type="number" id="saddlePages" name="saddlePages" class="form-control mb-3">
+                    <p id="saddleCost">Cost: $0</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" onclick="calculateSaddleCost()">Calculate Cost</button>
+                    <button type="button" class="btn btn-success" onclick="proceedWithOrder()">Proceed with Order</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="heatedSpineModal" tabindex="-1" role="dialog" aria-labelledby="heatedSpineModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="heatedSpineModalLabel">Heated Spine Binding</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>You have chosen Heated Spine Binding method.</p>
+                    <label for="heatedSpinePages">Enter the number of pages:</label>
+                    <input type="number" id="heatedSpinePages" name="heatedSpinePages" class="form-control mb-3">
+                    <p id="heatedSpineCost">Cost: $0</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" onclick="calculateHeatedSpineCost()">Calculate Cost</button>
+                    <button type="button" class="btn btn-success" onclick="proceedWithOrder()">Proceed with Order</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="a3LaminatingModal" tabindex="-1" role="dialog" aria-labelledby="a3LaminatingModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="a3LaminatingModalLabel">A3 Laminating</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>You have chosen A3 Laminating.</p>
+                    <label for="a3Quantity">Enter quantity:</label>
+                    <input type="number" id="a3Quantity" name="a3Quantity" class="form-control mb-3" min="1">
+                    <p id="a3Cost">Cost: $0</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" onclick="calculateA3LaminatingCost()">Calculate Cost</button>
+                    <button type="button" class="btn btn-success" onclick="proceedWithOrder('A3', $('#a3Quantity').val(), $('#a3Cost').text().replace('Cost: $', ''))">Proceed with Order</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="a4LaminatingModal" tabindex="-1" role="dialog" aria-labelledby="a4LaminatingModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="a4LaminatingModalLabel">A4 Laminating</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>You have chosen A4 Laminating.</p>
+                    <label for="a4Quantity">Enter quantity:</label>
+                    <input type="number" id="a4Quantity" name="a4Quantity" class="form-control mb-3" min="1">
+                    <p id="a4Cost">Cost: $0</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" onclick="calculateA4LaminatingCost()">Calculate Cost</button>
+                    <button type="button" class="btn btn-success" onclick="proceedWithOrder('A4', $('#a4Quantity').val(), $('#a4Cost').text().replace('Cost: $', ''))">Proceed with Order</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="modal fade" id="guillotineCuttingModal" tabindex="-1" role="dialog" aria-labelledby="guillotineCuttingModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="guillotineCuttingModalLabel">Guillotine Cutting</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>You have chosen Guillotine Cutting method.</p>
+                <label for="guillotineQuantity">Enter the quantity:</label>
+                <input type="number" id="guillotineQuantity" name="guillotineQuantity" class="form-control mb-3">
+                <p id="guillotineCost">Cost: $0</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="calculateGuillotineCost()">Calculate Cost</button>
+                <button type="button" class="btn btn-success" onclick="proceedWithOrder('Guillotine Cutting')">Proceed with Order</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="automaticCuttingModal" tabindex="-1" role="dialog" aria-labelledby="automaticCuttingModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="automaticCuttingModalLabel">Automatic Cutting</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>You have chosen Automatic Cutting method.</p>
+                <label for="automaticQuantity">Enter the quantity:</label>
+                <input type="number" id="automaticQuantity" name="automaticQuantity" class="form-control mb-3">
+                <p id="automaticCost">Cost: $0</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="calculateAutomaticCost()">Calculate Cost</button>
+                <button type="button" class="btn btn-success" onclick="proceedWithOrder('Automatic Cutting')">Proceed with Order</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
     <br>
     <br>
     <br>
@@ -445,6 +433,166 @@ aria-hidden="true">
         </div>
     </footer>
     <script>
+
+        function calculateMatteCost() {
+            const quantity = parseInt($('#matteQuantity').val());
+            const costPerUnit = 0.2; 
+            const totalCost = quantity * costPerUnit;
+            $('#matteCost').text(`Cost: $${totalCost.toFixed(2)}`);
+        }
+    
+        function calculateGlossyCost() {
+            const quantity = parseInt($('#glossyQuantity').val());
+            const costPerUnit = 0.25; 
+            const totalCost = quantity * costPerUnit;
+            $('#glossyCost').text(`Cost: $${totalCost.toFixed(2)}`);
+        }
+    
+        function calculateTexturedCost() {
+            const quantity = parseInt($('#texturedQuantity').val());
+            const costPerUnit = 0.3; 
+            const totalCost = quantity * costPerUnit;
+            $('#texturedCost').text(`Cost: $${totalCost.toFixed(2)}`);
+        }
+    
+        function proceedWithOrder(paperType) {
+            let quantity;
+            let cost;
+            if (paperType === 'Matte Paper') {
+                quantity = parseInt($('#matteQuantity').val());
+                cost = parseFloat($('#matteCost').text().replace("Cost: $", ""));
+            } else if (paperType === 'Glossy Paper') {
+                quantity = parseInt($('#glossyQuantity').val());
+                cost = parseFloat($('#glossyCost').text().replace("Cost: $", ""));
+            } else if (paperType === 'Textured Paper') {
+                quantity = parseInt($('#texturedQuantity').val());
+                cost = parseFloat($('#texturedCost').text().replace("Cost: $", ""));
+            }
+
+            window.location.href = `order.html?paperType=${paperType}&quantity=${quantity}&cost=${cost}`;
+        }
+
+          function calculateHPInkCost() {
+        const quantity = parseInt($('#hpInkQuantity').val());
+        const costPerUnit = 0.3; 
+        const totalCost = quantity * costPerUnit;
+        $('#hpInkCost').text(`Cost: $${totalCost.toFixed(2)}`);
+    }
+
+    function calculateCanonInkCost() {
+        const quantity = parseInt($('#canonInkQuantity').val());
+        const costPerUnit = 0.35; 
+        const totalCost = quantity * costPerUnit;
+        $('#canonInkCost').text(`Cost: $${totalCost.toFixed(2)}`);
+    }
+
+    function calculateEpsonInkCost() {
+        const quantity = parseInt($('#epsonInkQuantity').val());
+        const costPerUnit = 0.4; 
+        const totalCost = quantity * costPerUnit;
+        $('#epsonInkCost').text(`Cost: $${totalCost.toFixed(2)}`);
+    }
+
+    function proceedWithOrder(inkType) {
+        let quantity;
+        let cost;
+        if (inkType === 'Hewlett Packard') {
+            quantity = parseInt($('#hpInkQuantity').val());
+            cost = parseFloat($('#hpInkCost').text().replace("Cost: $", ""));
+        } else if (inkType === 'Canon') {
+            quantity = parseInt($('#canonInkQuantity').val());
+            cost = parseFloat($('#canonInkCost').text().replace("Cost: $", ""));
+        } else if (inkType === 'Epson') {
+            quantity = parseInt($('#epsonInkQuantity').val());
+            cost = parseFloat($('#epsonInkCost').text().replace("Cost: $", ""));
+        }
+
+        window.location.href = `order.html?inkType=${inkType}&quantity=${quantity}&cost=${cost}`;
+    }
+        function calculateWireCost() {
+        const pages = parseInt(document.getElementById('wirePages').value);
+        const costPerPage = 0.10; 
+        const totalCost = pages * costPerPage;
+        document.getElementById('wireCost').textContent = `Cost: $${totalCost.toFixed(2)}`;
+        }
+
+        function calculateSaddleCost() {
+        const pages = parseInt(document.getElementById('saddlePages').value);
+        const costPerPage = 0.10; 
+        const totalCost = pages * costPerPage;
+        document.getElementById('saddleCost').textContent = `Cost: $${totalCost.toFixed(3)}`;
+    }
+
+    function calculateHeatedSpineCost() {
+        const pages = parseInt(document.getElementById('heatedSpinePages').value);
+        const costPerPage = 0.10; 
+        const totalCost = pages * costPerPage;
+        document.getElementById('saddleCost').textContent = `Cost: $${totalCost.toFixed(3)}`;
+    }
+
+    function calculateA3LaminatingCost() {
+        const quantity = parseInt($('#a3Quantity').val());
+        const costPerUnit = 0.5; 
+        const totalCost = quantity * costPerUnit;
+        $('#a3Cost').text(`Cost: $${totalCost.toFixed(2)}`);
+    }
+    
+    function calculateA4LaminatingCost() {
+        const quantity = parseInt($('#a4Quantity').val());
+        const costPerUnit = 0.3; 
+        const totalCost = quantity * costPerUnit;
+        $('#a4Cost').text(`Cost: $${totalCost.toFixed(2)}`);
+    }
+    
+    function proceedWithOrder(serviceType, quantity, cost) {
+        window.location.href = `order.html?service=${serviceType}&quantity=${quantity}&cost=${cost}`;
+    }
+
+    function calculateGuillotineCost() {
+        const quantity = parseInt(document.getElementById('guillotineQuantity').value);
+        const costPerItem = 0.20; 
+        const totalCost = quantity * costPerItem;
+        document.getElementById('guillotineCost').textContent = `Cost: $${totalCost.toFixed(2)}`;
+    }
+
+    function calculateAutomaticCost() {
+        const quantity = parseInt(document.getElementById('automaticQuantity').value);
+        const costPerItem = 0.25; 
+        const totalCost = quantity * costPerItem;
+        document.getElementById('automaticCost').textContent = `Cost: $${totalCost.toFixed(2)}`;
+    }
+
+    function proceedWithOrder(method) {
+        let quantity;
+        let cost;
+        if (method === 'Guillotine Cutting') {
+            quantity = parseInt(document.getElementById('guillotineQuantity').value);
+            cost = parseFloat(document.getElementById('guillotineCost').textContent.replace("Cost: $", ""));
+        } else if (method === 'Automatic Cutting') {
+            quantity = parseInt(document.getElementById('automaticQuantity').value);
+            cost = parseFloat(document.getElementById('automaticCost').textContent.replace("Cost: $", ""));
+        }
+
+        window.location.href = `order.html?method=${method}&quantity=${quantity}&cost=${cost}`;
+    }
+    
+
+    function proceedWithOrder() {
+        const wireCostText = document.getElementById('wireCost').textContent.trim();
+        const saddleCostText = document.getElementById('saddleCost').textContent.trim();
+        const heatedSpineCostText = document.getElementById('heatedSpineCost').textContent.trim();
+    
+        const wireCost = parseFloat(wireCostText.replace("Cost: $", ""));
+        const saddleCost = parseFloat(saddleCostText.replace("Cost: $", ""));
+        const heatedSpineCost = parseFloat(heatedSpineCostText.replace("Cost: $", ""));
+    
+        const totalCost = wireCost + saddleCost + heatedSpineCost;
+    
+        window.location.href = `order.html?wireCost=${wireCost}&saddleCost=${saddleCost}&heatedSpineCost=${heatedSpineCost}&totalCost=${totalCost}`;
+    }
+    
+
+
         $(document).ready(function () {
             $('#menuDropdown').hover(function () {
                 $(this).find('.dropdown-menu').stop(true, true).fadeIn(200);
