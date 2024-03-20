@@ -17,7 +17,7 @@
 <body>
     <header class="py-4">
         <div class="banner-image">
-            <img src="logo.png" class="logo" alt="Logo"> <!-- Add your logo image -->
+            <img src="logo.png" class="logo" alt="Logo">
             <div class="banner-text">
                 <h1>Vitaly Tea</h1>
                 <p>We offer various services and a delicious menu.</p>
@@ -142,7 +142,7 @@
     <br>
     <br>
     <br>
-    <footer class="bg-dark text-white fixed-bottom w-100"> <!-- Added fixed-bottom class -->
+    <footer class="bg-dark text-white fixed-bottom w-100">
         <div class="container text-center">
             <p>This website is for educational purposes only. Designed by Sarmiento, Tumbale, Balmores.</p>
         </div>
@@ -152,9 +152,8 @@
     <script>
         $(document).ready(function() {
 
-            // Function to add item to order and display notification
             function addToOrder(name, price, imageSrc) {
-            var orderItem = { name: name, price: price, image: imageSrc }; // Include image source
+            var orderItem = { name: name, price: price, image: imageSrc }; 
             var order = JSON.parse(localStorage.getItem('order')) || [];
             order.push(orderItem);
             localStorage.setItem('order', JSON.stringify(order));
@@ -164,18 +163,15 @@
             $('.add-to-order').click(function() {
             var name = $(this).data('name');
             var price = parseFloat($(this).data('price'));
-            var imageSrc = $(this).closest('.card').find('.card-img-top').attr('src'); // Get image source
-            addToOrder(name, price, imageSrc); // Pass image source to addToOrder function
+            var imageSrc = $(this).closest('.card').find('.card-img-top').attr('src'); 
+            addToOrder(name, price, imageSrc); 
              });
 
 
-
-            // Function to display order added notification
             function displayOrderAddedNotification(itemName) {
                 alert(itemName + " has been added to your order!");
             }
 
-            // Dropdown menus hover functionality
             $('#servicesDropdown, #menuDropdown, .dropdown-submenu').hover(function () {
                 $(this).find('.dropdown-menu').stop(true, true).fadeIn(200);
             }, function () {
