@@ -101,32 +101,28 @@
 
 
             $('#printReceiptBtn').click(function () {
-        var orderNumber = generateOrderNumber();
         var order = JSON.parse(localStorage.getItem('order')) || [];
+        if (order.length === 0) {
+            alert("Please order something first.");
+            return;
+        }
+
+        var orderNumber = generateOrderNumber();
         var total = 0;
 
-        // Clear previous order details
         $('#orderDetails').empty();
 
-        // Populate order details
         order.forEach(function (item) {
             $('#orderDetails').append('<li>' + item.name + ' - $' + item.price.toFixed(2) + '</li>');
             total += item.price;
         });
 
-        // Update total
         $('#orderTotal').text('$' + total.toFixed(2));
 
-        // Update order number
         $('#orderNumber').text(orderNumber);
 
-        // Show the modal
         $('#salesInvoiceModal').modal('show');
     });
-
-
-
-
 
 
 
