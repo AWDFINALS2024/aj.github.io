@@ -17,7 +17,7 @@
 <body>
     <header class="py-4">
         <div class="banner-image">
-            <img src="logo.png" class="logo" alt="Logo"> <!-- Add your logo image -->
+            <img src="logo.png" class="logo" alt="Logo"> 
             <div class="banner-text">
                 <h1>Vitaly Tea</h1>
                 <p>We offer various services and a delicious menu.</p>
@@ -50,7 +50,6 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <!-- First column with two rows -->
                     <div class="card">
                         <div class="card-body">
                             <h1>About Us</h1>
@@ -65,7 +64,6 @@
                     </div>
                 </div>
                 <div class="col-md-6 d-flex justify-content-center align-items-center">
-                    <!-- Second column with no rows -->
                     <div class="card" style="height: 100%;">
                         <div class="card-body d-flex flex-column justify-content-center align-items-center">
                             <h1>Others</h1>
@@ -76,7 +74,7 @@
             </div>
         </div>
     </section>    
-    <footer class="bg-dark text-white"> <!-- Added fixed-bottom class -->
+    <footer class="bg-dark text-white"> 
         <div class="container text-center">
             <p>This website is for educational purposes only. Designed by Sarmiento, Tumbale, Balmores.</p>
         </div>
@@ -91,14 +89,12 @@
                 $(this).find('.dropdown-menu').stop(true, true).fadeOut(200);
             });
 
-            // Show dropdown menu on hover for Menu
             $('#menuDropdown').hover(function () {
                 $(this).find('.dropdown-menu').stop(true, true).fadeIn(200);
             }, function () {
                 $(this).find('.dropdown-menu').stop(true, true).fadeOut(200);
             });
 
-            // Show dropdown menu on hover
             $('.dropdown-submenu').hover(function () {
                 $(this).find('> .dropdown-menu').stop(true, true).delay(1).fadeIn(1);
             }, function () {
