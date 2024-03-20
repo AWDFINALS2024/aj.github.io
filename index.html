@@ -41,7 +41,7 @@
                 </div>
               <div class="modal-footer">
     <button type="button" class="btn btn-primary" data-dismiss="modal">Got it!</button>
-    <a href="contactus.html" class="btn btn-secondary">Contact Us</a> <!-- Added button -->
+    <a href="contactus.html" class="btn btn-secondary">Contact Us</a> 
 </div>
             </div>
         </div>
@@ -49,7 +49,7 @@
     <header class="py-4">
         <div class="banner-image">
             <a href="index.html">
-                <img src="logo.png" class="logo" alt="Logo"> <!-- Add your logo image -->
+                <img src="logo.png" class="logo" alt="Logo"> 
             </a>
             <div class="banner-text">
                 <h1>Vitaly Tea</h1>
@@ -113,7 +113,6 @@
                                     <p class="author">- Sarah Williams</p>
                                 </div>
                             </div>
-                            <!-- Add more testimonials as needed -->
                         </div>
                         <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -132,12 +131,11 @@
         <div class="row">
             <div class="col-md-6">
                 <a href="services.html">
-                    <div class="card mb-4 services-card"> <!-- Added services-card class -->
+                    <div class="card mb-4 services-card"> 
                         <img src="services.png" class="card-img-top" alt="Services Image">
                         <div class="card-body">
                             <h5 class="card-title">Services</h5>
                             <p class="card-text">Explore our range of binding, laminating, cutting, and digital printing services.</p>
-                            <!-- Removed <a> tag -->
                         </div>
                     </div>
                 </a>
@@ -149,7 +147,6 @@
                         <div class="card-body">
                             <h5 class="card-title">Menus</h5>
                             <p class="card-text">Discover our selection of warm drinks, cold drinks, and sandwiches.</p>
-                            <!-- Removed <a> tag -->
                         </div>
                     </div>
                 </a>
@@ -159,7 +156,6 @@
                         <div class="card-body">
                             <h5 class="card-title">About Us</h5>
                             <p class="card-text">Learn more about Vitaly Tea and our commitment to quality and service.</p>
-                            <!-- Removed <a> tag -->
                         </div>
                     </div>
                 </a>
@@ -172,7 +168,7 @@
     <br>
     <br>
     <br>
-    <footer class="bg-dark text-white"> <!-- Added fixed-bottom class -->
+    <footer class="bg-dark text-white"> 
         <div class="container text-center">
             <p>This website is for educational purposes only. Designed by Sarmiento, Tumbale, Balmores.</p>
         </div>
@@ -187,14 +183,12 @@
                 $(this).find('.dropdown-menu').stop(true, true).fadeOut(200);
             });
 
-            // Show dropdown menu on hover for Menu
             $('#menuDropdown').hover(function () {
                 $(this).find('.dropdown-menu').stop(true, true).fadeIn(200);
             }, function () {
                 $(this).find('.dropdown-menu').stop(true, true).fadeOut(200);
             });
 
-            // Show dropdown menu on hover
             $('.dropdown-submenu').hover(function () {
                 $(this).find('> .dropdown-menu').stop(true, true).delay(1).fadeIn(1);
             }, function () {
