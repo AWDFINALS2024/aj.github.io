@@ -6,6 +6,10 @@
     display: none; /* Hide dropdown menus by default */
 }
 
+body { 
+    cursor: url('cursor1.png'), auto;
+}
+
 /* Make submenu arrow pointer point to the right */
 .dropdown-menu.submenu-arrow::before {
     border-left: 6px solid transparent; /* Adjust the size of the arrow */
