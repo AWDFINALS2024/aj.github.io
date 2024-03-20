@@ -28,7 +28,57 @@
         <div class="container text-center">
             <ul class="nav justify-content-center">
                 <li class="nav-item"><a class="nav-link text-white" href="index.html">HOME</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="services.html">SERVICES</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-white dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        SERVICES
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                        <div class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#" id="bindingDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Binding
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="bindingDropdown">
+                                <a class="dropdown-item" href="#">Wire</a>
+                                <a class="dropdown-item" href="#">Saddle Stitch</a>
+                                <a class="dropdown-item" href="#">Heated Spine</a>
+                            </div>
+                        </div>
+                        <a class="dropdown-item" href="#">Laminating</a>
+                        <a class="dropdown-item" href="#">Cutting</a>
+                        <div class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#" id="laminatingDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Digital Printing
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="laminatingDropdown">
+                                <div class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#" id="inkDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Ink
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="inkDropdown">
+                                        <a class="dropdown-item" href="#">Hewlett Packard (HP)</a>
+                                        <a class="dropdown-item" href="#">EPSON</a>
+                                        <a class="dropdown-item" href="#">CANON</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#" id="paperStockDropdown"
+                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Paper Stock
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="paperStockDropdown">
+                                        <a class="dropdown-item" href="#">Glossy</a>
+                                        <a class="dropdown-item" href="#">Matte</a>
+                                        <a class="dropdown-item" href="#">Textured</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link text-white dropdown-toggle" href="#" id="menuDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -40,7 +90,7 @@
                         <a class="dropdown-item" href="sandwich.html">Sandwiches</a>
                     </div>
                 </li>
-                <li class="nav-item"><a class="nav-link text-white" href="#order">ORDER</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="order.html">ORDER</a></li>
                 <li class="nav-item"><a class="nav-link text-white" href="contactus.html">CONTACT US</a></li>
                 <li class="nav-item"><a class="nav-link text-white" href="aboutus.html">ABOUT US</a></li>
             </ul>
@@ -59,6 +109,7 @@
                             <h5 class="card-title">Hot Chocolate</h5>
                             <p class="card-text">A rich and creamy hot chocolate made with premium cocoa powder.</p>
                             <p class="card-text">Price: $3.99</p>
+                            <button class="btn btn-primary add-to-order" data-name="Hot Chocolate" data-price="3.99">Add to Order</button>
                         </div>
                     </div>
                 </div>
@@ -69,6 +120,7 @@
                             <h5 class="card-title">Chai Latte</h5>
                             <p class="card-text">A comforting blend of black tea, spices, and steamed milk.</p>
                             <p class="card-text">Price: $4.49</p>
+                            <button class="btn btn-primary add-to-order" data-name="Chai Latte" data-price="3.99">Add to Order</button>
                         </div>
                     </div>
                 </div>
@@ -79,6 +131,7 @@
                             <h5 class="card-title">Espresso</h5>
                             <p class="card-text">A concentrated coffee beverage with finely-ground coffee beans.</p>
                             <p class="card-text">Price: $4.49</p>
+                            <button class="btn btn-primary add-to-order" data-name="Espresso" data-price="3.99">Add to Order</button>
                         </div>
                     </div>
                 </div>
@@ -89,6 +142,7 @@
                             <h5 class="card-title">Cappuccino</h5>
                             <p class="card-text">A coffee-based drink made with espresso and steamed milk.</p>
                             <p class="card-text">Price: $4.49</p>
+                            <button class="btn btn-primary add-to-order" data-name="Cappuccino" data-price="3.99">Add to Order</button>
                         </div>
                     </div>
                 </div>
@@ -99,6 +153,7 @@
                             <h5 class="card-title">Americano</h5>
                             <p class="card-text">A diluted espresso drink made by adding hot water to a shot of espresso.</p>
                             <p class="card-text">Price: $4.49</p>
+                            <button class="btn btn-primary add-to-order" data-name="Americano" data-price="3.99">Add to Order</button>
                         </div>
                     </div>
                 </div>
@@ -110,34 +165,49 @@
 
 
     
-        
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <footer class="bg-dark text-white fixed-bottom w-100"> <!-- Added fixed-bottom class -->
         <div class="container text-center">
             <p>This website is for educational purposes only. Designed by Sarmiento, Tumbale, Balmores.</p>
         </div>
     </footer>
+
+
     <script>
-        $(document).ready(function () {
-            $('#welcomeModal').modal('show');
+        $(document).ready(function() {
 
-            $('#servicesDropdown').hover(function () {
+            // Function to add item to order and display notification
+            function addToOrder(name, price, imageSrc) {
+            var orderItem = { name: name, price: price, image: imageSrc }; // Include image source
+            var order = JSON.parse(localStorage.getItem('order')) || [];
+            order.push(orderItem);
+            localStorage.setItem('order', JSON.stringify(order));
+            displayOrderAddedNotification(name);
+            }
+
+            $('.add-to-order').click(function() {
+            var name = $(this).data('name');
+            var price = parseFloat($(this).data('price'));
+            var imageSrc = $(this).closest('.card').find('.card-img-top').attr('src'); // Get image source
+            addToOrder(name, price, imageSrc); // Pass image source to addToOrder function
+             });
+
+
+
+            // Function to display order added notification
+            function displayOrderAddedNotification(itemName) {
+                alert(itemName + " has been added to your order!");
+            }
+
+            // Dropdown menus hover functionality
+            $('#servicesDropdown, #menuDropdown, .dropdown-submenu').hover(function () {
                 $(this).find('.dropdown-menu').stop(true, true).fadeIn(200);
             }, function () {
                 $(this).find('.dropdown-menu').stop(true, true).fadeOut(200);
-            });
-
-            // Show dropdown menu on hover for Menu
-            $('#menuDropdown').hover(function () {
-                $(this).find('.dropdown-menu').stop(true, true).fadeIn(200);
-            }, function () {
-                $(this).find('.dropdown-menu').stop(true, true).fadeOut(200);
-            });
-
-            // Show dropdown menu on hover
-            $('.dropdown-submenu').hover(function () {
-                $(this).find('> .dropdown-menu').stop(true, true).delay(1).fadeIn(1);
-            }, function () {
-                $(this).find('> .dropdown-menu').stop(true, true).delay(1).fadeOut(1);
             });
         });
     </script>
