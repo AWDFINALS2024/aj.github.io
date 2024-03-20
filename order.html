@@ -17,7 +17,7 @@
 <body>
     <header class="py-4">
         <div class="banner-image">
-            <img src="logo.png" class="logo" alt="Logo"> <!-- Add your logo image -->
+            <img src="logo.png" class="logo" alt="Logo"> 
             <div class="banner-text">
                 <h1>Vitaly Tea</h1>
                 <p>We offer various services and a delicious menu.</p>
@@ -28,7 +28,57 @@
         <div class="container text-center">
             <ul class="nav justify-content-center">
                 <li class="nav-item"><a class="nav-link text-white" href="index.html">HOME</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="services.html">SERVICES</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-white dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        SERVICES
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                        <div class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#" id="bindingDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Binding
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="bindingDropdown">
+                                <a class="dropdown-item" href="#">Wire</a>
+                                <a class="dropdown-item" href="#">Saddle Stitch</a>
+                                <a class="dropdown-item" href="#">Heated Spine</a>
+                            </div>
+                        </div>
+                        <a class="dropdown-item" href="#">Laminating</a>
+                        <a class="dropdown-item" href="#">Cutting</a>
+                        <div class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#" id="laminatingDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Digital Printing
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="laminatingDropdown">
+                                <div class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#" id="inkDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Ink
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="inkDropdown">
+                                        <a class="dropdown-item" href="#">Hewlett Packard (HP)</a>
+                                        <a class="dropdown-item" href="#">EPSON</a>
+                                        <a class="dropdown-item" href="#">CANON</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#" id="paperStockDropdown"
+                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Paper Stock
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="paperStockDropdown">
+                                        <a class="dropdown-item" href="#">Glossy</a>
+                                        <a class="dropdown-item" href="#">Matte</a>
+                                        <a class="dropdown-item" href="#">Textured</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link text-white dropdown-toggle" href="#" id="menuDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -54,13 +104,41 @@
         </div>
     </section>
 
+    <div class="container text-center">
+        <button id="printReceiptBtn" class="btn btn-primary">Print Receipt</button>
+    </div>
+
+
+    <div class="modal fade" id="salesInvoiceModal" tabindex="-1" role="dialog" aria-labelledby="salesInvoiceModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="salesInvoiceModalLabel">Sales Invoice</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h6>Order Number: <span id="orderNumber"></span></h6>
+                    <h6>Orders:</h6>
+                    <ul id="orderDetails"></ul>
+                    <h6>Total: <span id="orderTotal"></span></h6>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <br>
     <br>
     <br>
     <br>
     <br>
-    <footer class="bg-dark text-white fixed-bottom w-100"> <!-- Added fixed-bottom class -->
+    <footer class="bg-dark text-white fixed-bottom w-100"> 
         <div class="container text-center">
             <p>This website is for educational purposes only. Designed by Sarmiento, Tumbale, Balmores.</p>
         </div>
@@ -68,6 +146,61 @@
 
     <script>
         $(document).ready(function() {
+
+
+            $('#printReceiptBtn').click(function () {
+        var orderNumber = generateOrderNumber();
+        var order = JSON.parse(localStorage.getItem('order')) || [];
+        var total = 0;
+
+        // Clear previous order details
+        $('#orderDetails').empty();
+
+        // Populate order details
+        order.forEach(function (item) {
+            $('#orderDetails').append('<li>' + item.name + ' - $' + item.price.toFixed(2) + '</li>');
+            total += item.price;
+        });
+
+        // Update total
+        $('#orderTotal').text('$' + total.toFixed(2));
+
+        // Update order number
+        $('#orderNumber').text(orderNumber);
+
+        // Show the modal
+        $('#salesInvoiceModal').modal('show');
+    });
+
+
+
+
+
+
+
+
+
+
+            function generateOrderNumber() {
+            return Math.floor(Math.random() * 1000000); // Generates a random 6-digit number
+        }
+
+        $(document).ready(function () {
+            // Your existing JavaScript code
+            
+            // When the "Print Receipt" button is clicked, trigger the modal and update the order number
+            $('#printReceiptBtn').click(function () {
+                var orderNumber = generateOrderNumber();
+                $('#orderNumber').text(orderNumber);
+                $('#salesInvoiceModal').modal('show');
+            });
+        });
+
+
+
+
+
+
             displayOrder();
             $('#remove-order').click(function() {
                 removeOrder();
