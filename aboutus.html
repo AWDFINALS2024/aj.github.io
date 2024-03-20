@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.67">
+    <title>My Homepage</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-submenu/dist/css/bootstrap-submenu.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-submenu/dist/js/bootstrap-submenu.min.js"></script>
+</head>
+<body>
+    <header class="py-4">
+        <div class="banner-image">
+            <img src="logo.png" class="logo" alt="Logo"> <!-- Add your logo image -->
+            <div class="banner-text">
+                <h1>Vitaly Tea</h1>
+                <p>We offer various services and a delicious menu.</p>
+            </div>
+        </div>
+    </header>
+    <nav class="bg-secondary py-2">
+        <div class="container text-center">
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white" href="index.html">HOME</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-white dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        SERVICES
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                        <div class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#" id="bindingDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Binding
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="bindingDropdown">
+                                <a class="dropdown-item" href="#">Wire</a>
+                                <a class="dropdown-item" href="#">Saddle Stitch</a>
+                                <a class="dropdown-item" href="#">Heated Spine</a>
+                            </div>
+                        </div>
+                        <a class="dropdown-item" href="#">Laminating</a>
+                        <a class="dropdown-item" href="#">Cutting</a>
+                        <div class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#" id="laminatingDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Digital Printing
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="laminatingDropdown">
+                                <div class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#" id="inkDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Ink
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="inkDropdown">
+                                        <a class="dropdown-item" href="#">Hewlett Packard (HP)</a>
+                                        <a class="dropdown-item" href="#">EPSON</a>
+                                        <a class="dropdown-item" href="#">CANON</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#" id="paperStockDropdown"
+                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Paper Stock
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="paperStockDropdown">
+                                        <a class="dropdown-item" href="#">Glossy</a>
+                                        <a class="dropdown-item" href="#">Matte</a>
+                                        <a class="dropdown-item" href="#">Textured</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-white dropdown-toggle" href="#" id="menuDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        MENU
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="menuDropdown">
+                        <a class="dropdown-item" href="warmdrink.html">Warm Drinks</a>
+                        <a class="dropdown-item" href="colddrink.html">Cold Drinks</a>
+                        <a class="dropdown-item" href="sandwich.html">Sandwiches</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="#order">ORDER</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="contactus.html">CONTACT US</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="aboutus.html">ABOUT US</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="testimonials" class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- First column with two rows -->
+                    <div class="card">
+                        <div class="card-body">
+                            <h1>About Us</h1>
+                            <p class="card-text" style="width: auto;">Our products and services offer a lot more that you could think of. From printing different kinds of materials and papers, bindings and stitching and even more. Here at Vitaly Tea, we offer all that, plus a cozy nook where you can sit, relax, and wait for your printing job to be finished. And do not forget to grab our delicious mouthwatering drinks too.</p>
+                        </div>
+                    </div>
+                    <div class="card mt-4">
+                        <div class="card-body">
+                            <h1>Our Services</h1>
+                            <p class="card-text" style="width: auto;">Our services include digital printing, binding, laminating, and cutting. All the regular services you can find in a serious printing shop.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <!-- Second column with no rows -->
+                    <div class="card" style="height: 100%;">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                            <h1>Others</h1>
+                            <p class="card-text">Insert your paragraph here...</p>
+                        </div>
+                    </div>
+                </div>                                           
+            </div>
+        </div>
+    </section>    
+    <footer class="bg-dark text-white"> <!-- Added fixed-bottom class -->
+        <div class="container text-center">
+            <p>This website is for educational purposes only. Designed by Sarmiento, Tumbale, Balmores.</p>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function () {
+            $('#welcomeModal').modal('show');
+
+            $('#servicesDropdown').hover(function () {
+                $(this).find('.dropdown-menu').stop(true, true).fadeIn(200);
+            }, function () {
+                $(this).find('.dropdown-menu').stop(true, true).fadeOut(200);
+            });
+
+            // Show dropdown menu on hover for Menu
+            $('#menuDropdown').hover(function () {
+                $(this).find('.dropdown-menu').stop(true, true).fadeIn(200);
+            }, function () {
+                $(this).find('.dropdown-menu').stop(true, true).fadeOut(200);
+            });
+
+            // Show dropdown menu on hover
+            $('.dropdown-submenu').hover(function () {
+                $(this).find('> .dropdown-menu').stop(true, true).delay(1).fadeIn(1);
+            }, function () {
+                $(this).find('> .dropdown-menu').stop(true, true).delay(1).fadeOut(1);
+            });
+        });
+    </script>
+</body>
+</html>

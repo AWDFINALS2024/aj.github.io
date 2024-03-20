@@ -1,0 +1,313 @@
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none; /* Hide dropdown menus by default */
+}
+
+/* Make submenu arrow pointer point to the right */
+.dropdown-menu.submenu-arrow::before {
+    border-left: 6px solid transparent; /* Adjust the size of the arrow */
+    border-right: none; /* Remove the right border */
+    border-top: 6px solid transparent; /* Adjust the size of the arrow */
+    border-bottom: 6px solid transparent; /* Adjust the size of the arrow */
+    border-right-color: #000; /* Set the color of the arrow */
+    left: auto; /* Reset the left position */
+    right: 10px; /* Adjust the position of the arrow */
+}
+
+.dropdown-menu.submenu-arrow::after {
+    border-left: 5px solid transparent; /* Adjust the size of the arrow */
+    border-right: none; /* Remove the right border */
+    border-top: 5px solid transparent; /* Adjust the size of the arrow */
+    border-bottom: 5px solid transparent; /* Adjust the size of the arrow */
+    border-right-color: #fff; /* Set the color of the arrow */
+    left: auto; /* Reset the left position */
+    right: 11px; /* Adjust the position of the arrow */
+}
+
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+
+.card.services-card {
+    height: 1086px; /* Adjust the height as needed */
+}
+
+.card.services-card .card-img-top {
+    margin-top: 160px; /* Adjust the margin-top value to move the image lower */
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.85); /* Set opacity to 85% */
+}
+
+.card.services-card .card-img-top {
+    margin-top: 160px; /* Adjust the margin-top value to move the image lower */
+}
+
+body {
+    background-image: url('https://cdnb.artstation.com/p/assets/images/images/011/676/781/original/pixel-jeff-cafe.gif?1530807813'); /* Replace 'background.jpg' with the path to your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Press Start 2P", system-ui;
+    margin: 0;
+    padding: 0;
+}
+
+ #testimonials {
+            background-color: rgba(255, 255, 255, 0.70); /* Set opacity to 85% */
+            padding: 50px 0; /* Adjust padding as needed */
+            margin-bottom: 0; /* Remove default bottom margin */
+        }
+
+header {
+    font-family: "Press Start 2P", system-ui;
+    background-color: transparent;
+    padding: 0;
+    text-align: center;
+}
+
+.banner-image {
+    position: relative;
+    background-image: url('banner.png'); /* Replace 'your-banner-image-url.jpg' with the URL of your banner image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px; /* Adjust height as needed */
+    margin-top: -80px; /* Adjust the margin-top value to remove the space */
+    opacity: 0.75; /* Set opacity to 85% */
+}
+
+.logo {
+    position: absolute;
+    top: 50px; /* Adjust the top position of the logo */
+    left: 50px; /* Adjust the left position of the logo */
+    width: 150px; /* Adjust the width of the logo */
+    height: 150px; /* Maintain aspect ratio */
+    z-index: 1; /* Ensure the logo appears above the banner text */
+}
+
+.banner-text {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; /* Text color */
+}
+
+.banner-text h1 {
+    font-size: 2.5rem; /* Adjust font size as needed */
+    margin-bottom: 10px; /* Adjust margin as needed */
+}
+
+.banner-text p {
+    font-size: 1.2rem; /* Adjust font size as needed */
+    margin-bottom: 0; /* Remove default margin */
+}
+
+nav {
+    background-color: #444;
+    text-align: center;
+    margin-top: -25px; /* Adjust the margin-top value to remove the space */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Alternating background color for sections */
+section:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+
+
+
+
+
+
+
+/*contact us*/
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none; /* Hide dropdown menus by default */
+}
+
+        .contact-form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        body {
+            font-family: 'Press Start 2P', cursive;
+        }
+
+/* Make submenu arrow pointer point to the right */
+.dropdown-menu.submenu-arrow::before {
+    border-left: 6px solid transparent; /* Adjust the size of the arrow */
+    border-right: none; /* Remove the right border */
+    border-top: 6px solid transparent; /* Adjust the size of the arrow */
+    border-bottom: 6px solid transparent; /* Adjust the size of the arrow */
+    border-right-color: #000; /* Set the color of the arrow */
+    left: auto; /* Reset the left position */
+    right: 10px; /* Adjust the position of the arrow */
+}
+
+.dropdown-menu.submenu-arrow::after {
+    border-left: 5px solid transparent; /* Adjust the size of the arrow */
+    border-right: none; /* Remove the right border */
+    border-top: 5px solid transparent; /* Adjust the size of the arrow */
+    border-bottom: 5px solid transparent; /* Adjust the size of the arrow */
+    border-right-color: #fff; /* Set the color of the arrow */
+    left: auto; /* Reset the left position */
+    right: 11px; /* Adjust the position of the arrow */
+}
+
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+
+.card.services-card {
+    height: 1086px; /* Adjust the height as needed */
+}
+
+.card.services-card .card-img-top {
+    margin-top: 160px; /* Adjust the margin-top value to move the image lower */
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.85); /* Set opacity to 85% */
+}
+
+.card.services-card .card-img-top {
+    margin-top: 160px; /* Adjust the margin-top value to move the image lower */
+}
+
+body {
+    background-image: url('https://cdnb.artstation.com/p/assets/images/images/011/676/781/original/pixel-jeff-cafe.gif?1530807813'); /* Replace 'background.jpg' with the path to your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Press Start 2P", system-ui;
+    margin: 0;
+    padding: 0;
+}
+
+ #testimonials {
+            background-color: rgba(255, 255, 255, 0.70); /* Set opacity to 85% */
+            padding: 50px 0; /* Adjust padding as needed */
+            margin-bottom: 0; /* Remove default bottom margin */
+        }
+
+header {
+    font-family: "Press Start 2P", system-ui;
+    background-color: transparent;
+    padding: 0;
+    text-align: center;
+}
+
+.banner-image {
+    position: relative;
+    background-image: url('banner.png'); /* Replace 'your-banner-image-url.jpg' with the URL of your banner image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px; /* Adjust height as needed */
+    margin-top: -80px; /* Adjust the margin-top value to remove the space */
+    opacity: 0.75; /* Set opacity to 85% */
+}
+
+.logo {
+    position: absolute;
+    top: 50px; /* Adjust the top position of the logo */
+    left: 50px; /* Adjust the left position of the logo */
+    width: 150px; /* Adjust the width of the logo */
+    height: 150px; /* Maintain aspect ratio */
+    z-index: 1; /* Ensure the logo appears above the banner text */
+}
+
+.banner-text {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; /* Text color */
+}
+
+.banner-text h1 {
+    font-size: 2.5rem; /* Adjust font size as needed */
+    margin-bottom: 10px; /* Adjust margin as needed */
+}
+
+.banner-text p {
+    font-size: 1.2rem; /* Adjust font size as needed */
+    margin-bottom: 0; /* Remove default margin */
+}
+
+nav {
+    background-color: #444;
+    text-align: center;
+    margin-top: -25px; /* Adjust the margin-top value to remove the space */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Alternating background color for sections */
+section:nth-child(even) {
+    background-color: #f8f9fa;
+}
