@@ -101,28 +101,32 @@
 
 
             $('#printReceiptBtn').click(function () {
-        var order = JSON.parse(localStorage.getItem('order')) || [];
-        if (order.length === 0) {
-            alert("Please order something first.");
-            return;
-        }
+    var order = JSON.parse(localStorage.getItem('order')) || [];
+    if (order.length === 0) {
+        alert("Please order something first.");
+        return;
+    }
 
-        var orderNumber = generateOrderNumber();
-        var total = 0;
+    var orderNumber = generateOrderNumber();
+    var total = 0;
 
-        $('#orderDetails').empty();
+    $('#orderDetails').empty();
 
-        order.forEach(function (item) {
-            $('#orderDetails').append('<li>' + item.name + ' - $' + item.price.toFixed(2) + '</li>');
-            total += item.price;
-        });
-
-        $('#orderTotal').text('$' + total.toFixed(2));
-
-        $('#orderNumber').text(orderNumber);
-
-        $('#salesInvoiceModal').modal('show');
+    order.forEach(function (item) {
+        $('#orderDetails').append('<li>' + item.name + ' - $' + item.price.toFixed(2) + '</li>');
+        total += item.price;
     });
+
+    $('#orderTotal').text('$' + total.toFixed(2));
+
+    $('#orderNumber').text(orderNumber);
+
+    localStorage.removeItem('order');
+
+    displayOrder(); 
+
+    $('#salesInvoiceModal').modal('show');
+});
 
 
 
